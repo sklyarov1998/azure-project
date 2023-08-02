@@ -1,5 +1,18 @@
-generate ssh-keys:
+## Initiate terraform
 
-ssh-keygen -t rsa -b 4096 -f ~/.ssh/db-server
+```
+terraform init
+```
 
-ssh-keygen -t rsa -b 4096 -f ~/.ssh/vmss      
+## Create plan file
+
+```
+terraform plan -out=planfile
+
+```
+
+## Apply the plan
+
+```
+terraform apply "planfile"
+```
